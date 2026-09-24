@@ -1,51 +1,18 @@
 # Eightfold
 
-**Composable AI infrastructure built around adaptation.**
+**A hub for modular software projects.**
 
-Eightfold explores a simple premise: everything should be a module, and every module should be replaceable.
+Eightfold is the umbrella for my projects, built on one concept: modularity. Everything is a module, and every module is replaceable.
 
-We are building an AI system that can evolve through small, inspectable, reproducible components instead of one permanently fixed application.
+Each project is assembled from small, inspectable, reproducible components instead of one fixed application. A module can be added, swapped, or removed without rewriting what surrounds it.
 
-## The three layers
+## Principles
 
-| Layer | Repository | Purpose |
-| --- | --- | --- |
-| Runtime | [eightfold-harness](https://github.com/Eightfold-Code/eightfold-harness) | Runs sessions, profiles, tools, models, and plugins |
-| Capabilities | [eightfold-treasury](https://github.com/Eightfold-Code/eightfold-treasury) | Catalogs and distributes installable adaptations |
-| Presentation | [eightfold-armoury](https://github.com/Eightfold-Code/eightfold-armoury) | Catalogs and distributes visual skins and themes |
-
-~~~text
-Armoury  →  presentation
-Treasury →  capabilities
-Harness  →  runtime
-~~~
-
-Harness is the engine. Treasury is the catalog. Adaptations are the system.
-
-## Why this structure?
-
-- **Modular by default** — capabilities remain replaceable.
-- **Native over parallel** — use the Harness and Cordis lifecycle.
-- **Reproducible** — published components resolve to exact Git commits.
-- **Composable** — profiles combine capabilities and presentation independently.
-- **Inspectable** — manifests describe compatibility, entry points, and permissions.
-- **Small by design** — install one component without cloning every component.
-
-## How it works
-
-1. Harness provides the runtime and profile lifecycle.
-2. Treasury publishes adaptations such as tools, integrations, and workflows.
-3. Armoury publishes presentation-only skins and themes.
-4. Profiles select the capabilities and visual layer they need.
-
-The result is an adaptable foundation that can change without turning every feature into a permanent core dependency.
+- **Modular by default.** Each capability is its own module with clear entry points.
+- **Replaceable.** Any module can be replaced by another that fulfils the same role.
+- **Composable.** Modules combine into larger systems without special cases.
+- **Inspectable.** Small components are easy to read, test, and reason about.
 
 ## Status
 
-Eightfold is an active developer preview. Interfaces, registry formats, and installation commands are evolving as the foundation is stabilized.
-
-## Explore
-
-- [Eightfold Harness](https://github.com/Eightfold-Code/eightfold-harness)
-- [Eightfold Treasury](https://github.com/Eightfold-Code/eightfold-treasury)
-- [Eightfold Armoury](https://github.com/Eightfold-Code/eightfold-armoury)
+The projects in this hub are under active development. Repositories open up as they mature.
